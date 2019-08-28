@@ -45,8 +45,8 @@ float get_Humidity_Data2()
   humidity = Humidity_Sensor2.GetRelHumidity();
   if (humidity == true)
   {
-    Serial.print("soilMoistureData : ");
-    Serial.print(soilMoistureData);
+    Serial.print("Air Humidity: ");
+    Serial.print(humidity);
     Serial.println("%");
   }
   return humidity;

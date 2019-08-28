@@ -1,5 +1,6 @@
 # QT_SHT3x
 ## Arduino library for Sensirion temperature and humidity sensors SHT30, SHT31 & SHT35.
+## USING SOFTWARE I2C
 The heavy version.  
 Check for /examples for examples of different use cases.  
 

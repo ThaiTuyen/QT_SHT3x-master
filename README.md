@@ -1,6 +1,7 @@
 # QT_SHT3x
 ## Arduino library for Sensirion temperature and humidity sensors SHT30, SHT31 & SHT35.
 ## USING SOFTWARE I2C
+## This library already modified from: https://github.com/Risele/SHT3x
 The heavy version.  
 Check for /examples for examples of different use cases.  
 
@@ -16,7 +17,7 @@ SHT3x(    int Address = 0x44, //I2C device address, 0x44 or 0x45
         SHT3xMode Mode=Single_HighRep_ClockStretch //Operation mode , look for "enum SHT3xMode"  
 ); 
 
-Method select pin software i2c:
+The method selects pin software i2c:
 
 Begin(sda, scl); //yellow, blue
 

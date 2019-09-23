@@ -17,13 +17,13 @@ SHT3x(    int Address = 0x44, //I2C device address, 0x44 or 0x45
         SHT3xMode Mode=Single_HighRep_ClockStretch //Operation mode , look for "enum SHT3xMode"  
 ); 
 
-The method selects pin software i2c:
+###The method selects pin software i2c:
 
 Begin(sda, scl); //yellow, blue
 
 Do not forget about the UpdateData() method: this method polls sensors.
 
-
+###Note:
 Note 1: by default, the data from sensor updates not faster, than 2 times a second.
 For faster update use SetUpdateInterval(uint32_t UpdateIntervalMillisec); but do not exceed the datasheet values (10 measurments per second (100 ms)) because of sensor self-heating (datasheet/section 4.5, at the end of Table 9)  
 

@@ -10,7 +10,7 @@ https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_
 For more simple version check the SimpleSHT3x library.  
 
 ### The constructor structure:  
-    SHT3x(    int Address = 0x44, //I2C device address, 0x44 or 0x45  
+    SHT3x(int Address = 0x44, //I2C device address, 0x44 or 0x45  
         ValueIfError Value = Zero, //What to return in case of errors. Zero or PrevValue  
         uint8_t HardResetPin = 255, //Number of pin RESET connected to (input from 100 to 255 if not used)  
         SHT3xSensor SensorType = SHT30, //Sensor type, SHT30, SHT31 or SHT35.  

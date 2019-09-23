@@ -2,7 +2,7 @@
 ## Arduino library for Sensirion temperature and humidity sensors SHT30, SHT31 & SHT35.
 ## USING SOFTWARE I2C
 ## This library already modified from: https://github.com/Risele/SHT3x
-The heavy version.  
+
 Check for /examples for examples of different use cases.  
 
 The datasheet I followed is:  
@@ -24,23 +24,6 @@ Begin(sda, scl); //yellow, blue
 Do not forget about the UpdateData() method: this method polls sensors.
 
 
-### Supports:  
-    Temperature data at Celsius, Kelvin and Fahrenheit scales.  
-    Relative humidity data.  
-    Absolute humidity data at Torr, mm Hg, Pa, bar, technical and standard atmosphere, psi scales.  
-    Data integrity (by CRC8 algorithm) (datasheet/section 4.12).  
-    Temperature, relative and absolute humidity tolerances (in dependence from measured values)  
-    Calibration (linear) of temperature and humidity data by factors or by reverse sensor values (2 points)  
-    Heater On/Off (integrated to SHT3x sensor) (datasheet/section 4.10)  
-    Different sensor actions modes (datasheet/section 4.3)  
-    Reset: soft (I2C) and hard (by corresponding pin) (datasheet/section 4.9)  
-    
-### Do not supports:  
-    Action in periodic mode (datasheet/section 4.5)  
-    Interrupts (datasheet/section 3.5)  
-    
-    
-    
 Note 1: by default, the data from sensor updates not faster, than 2 times a second.
 For faster update use SetUpdateInterval(uint32_t UpdateIntervalMillisec); but do not exceed the datasheet values (10 measurments per second (100 ms)) because of sensor self-heating (datasheet/section 4.5, at the end of Table 9)  
 

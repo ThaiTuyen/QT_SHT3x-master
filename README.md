@@ -25,7 +25,8 @@ Do not forget about the UpdateData() method: this method polls sensors.
 
 ### Note:
         Note 1: by default, the data from sensor updates not faster, than 2 times a second.
-        For faster update use SetUpdateInterval(uint32_t UpdateIntervalMillisec); but do not exceed the datasheet values (10 measurments           per second (100 ms)) because of sensor self-heating (datasheet/section 4.5, at the end of Table 9)  
+        For faster update use SetUpdateInterval(uint32_t UpdateIntervalMillisec); but do not exceed the datasheet values 
+       (10 measurment per second (100 ms)) because of sensor self-heating (datasheet/section 4.5, at the end of Table 9)  
 
         Note 2: The sensor type affects the tolerance values only.   
   
